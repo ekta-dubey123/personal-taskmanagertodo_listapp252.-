@@ -42,15 +42,6 @@ function App() {
     });
   };
 
-  // const onDelete = (todo) => {
-  //   if (!user) return;
-  //   const todoRef = ref(db, `users/${user.uid}/todos/${todo.sno}`);
-  //   remove(todoRef)
-  //     .then(() => console.log("Deleted from Firebase"))
-  //     .catch((e) => console.error("Error deleting from Firebase", e));
-  //   setTodos(todos.filter((e) => e.sno !== todo.sno));
-  // };
-
 const onDelete = (todo) => {
   if (!user) return;
   setTodos(todos.filter((e) => e.sno !== todo.sno));
