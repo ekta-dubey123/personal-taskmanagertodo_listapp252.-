@@ -8,7 +8,7 @@ import { getDatabase } from "firebase/database";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC8xTrvdFZzxu_L_PDLhnzIyeTxJUMAu7Q",
+ 
   authDomain: "my-personal-task-manager-8c796.firebaseapp.com",
   databaseURL: "https://my-personal-task-manager-8c796-default-rtdb.firebaseio.com",
   projectId: "my-personal-task-manager-8c796",
