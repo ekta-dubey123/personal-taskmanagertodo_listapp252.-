@@ -57,7 +57,7 @@ const todoRef = ref(db, `users/${user.uid}/todos/${todo.sno}`);
 };
 
 
-  const addTodo = (title, desc) => {
+  const addTodo = (title, desc, priority = "medium") => {
     if (!user) return alert("Please login first!");
 
     let sno = todos.length === 0 ? 0 : todos[todos.length - 1].sno + 1;
@@ -65,6 +65,7 @@ const todoRef = ref(db, `users/${user.uid}/todos/${todo.sno}`);
       sno,
       title,
       desc,
+      priority,
       done:false,
     };
     setTodos([...todos, myTodo]);
@@ -127,6 +128,7 @@ const todoRef = ref(db, `users/${user.uid}/todos/${todo.sno}`);
 }
 
 export default App;
+
 
 
 
